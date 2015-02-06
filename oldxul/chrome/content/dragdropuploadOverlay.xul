@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://dragdropupload/skin/dragdropupload.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://dragdropupload/locale/dragdropuploadOverlay.dtd" >
+
+
+<overlay id="dragdropupload" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<script type="application/x-javascript" src="chrome://global/content/nsDragAndDrop.js" />
+<script type="application/x-javascript" src="chrome://global/content/nsJSSupportsUtils.js" />
+<script type="application/x-javascript" src="chrome://dragdropupload/content/io/jslib.js" />
+<script type="application/x-javascript" src="chrome://dragdropupload/content/io/io.js" />
+<script type="application/x-javascript" src="chrome://global/content/nsTransferable.js" />
+<script type="application/x-javascript" src="dragdropupload.js" />
+
+
+	<!--broadcast-->
+
+	<broadcasterset id="mainBroadcasterSet">
+		<broadcaster id="viewDragDropUploadSidebar" autoCheck="false" label="&broadcaster.drag.drop.sidebar;" type="checkbox" group="sidebar" sidebarurl="chrome://dragdropupload/content/sidebar.xul" sidebartitle="&broadcaster.drag.drop.sidebar;" oncommand="toggleSidebar('viewDragDropUploadSidebar');" />
+	</broadcasterset>
+
+	<!--sidebar-->
+
+	<menupopup id="viewSidebarMenu">
+		<menuitem observes="viewDragDropUploadSidebar" image="chrome://dragdropupload/skin/dragdrop-icon.png" key="key_openDragDropUploadSidebar" />
+	</menupopup>
+
+	<!--keyset-->
+
+	<!--<keyset id="mainKeyset">
+		<key id="key_openDragDropUploadSidebar" command="viewDragDropUploadSidebar" key="L" modifiers="alt" />
+	</keyset>-->
+
+	<!-- firefox toolbar http://developer.mozilla.org/en/docs/Creating_toolbar_buttons -->
+
+	<toolbarpalette id="BrowserToolbarPalette">
+	<toolbarbutton id="dragdrop-button" engine="fx" class="toolbarbutton-1" label="&toolbarbutton.drag.drop.upload;" tooltiptext="&toolbarbutton.open.close.the.drag.drop.upload.sidebar;" onclick="toggleSidebar('viewDragDropUploadSidebar');" />
+	</toolbarpalette>
+
+</overlay>

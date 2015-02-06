@@ -1,0 +1,9 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#dragdrop-button {
+  list-style-image: url("chrome://dragdropupload/skin/dragdrop-icon24.png");
+}
+
+toolbar[iconsize="small"] #dragdrop-button[engine="fx"] {
+  list-style-image: url("chrome://dragdropupload/skin/dragdrop-icon.png");
+}

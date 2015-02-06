@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+     xmlns:songbird="http://www.songbirdnest.com/2007/addon-metadata-rdf#">
+
+	<Description about="urn:mozilla:install-manifest">
+
+		<em:id>{CB56AAF9-68C8-41bd-8E5C-7B53232CF7B9}</em:id>
+		<em:name>dragdropupload</em:name>
+		<em:version>1.9.38</em:version>
+		<em:description>This extension helps you to upload files</em:description>
+		<em:creator>Emanuele Ruffaldi</em:creator>
+		<em:contributor>Aurelien Tabard</em:contributor>
+		<em:homepageURL>http://www.teslacore.it/wiki/index.php?title=DragDropUpload</em:homepageURL>
+		<em:optionsURL></em:optionsURL>
+		<em:aboutURL></em:aboutURL>
+		<em:iconURL></em:iconURL>
+
+		<em:file>
+			<Description about="urn:mozilla:extension:file:dragdropupload.jar">
+				<em:package>content/</em:package>
+				<em:skin>skin/</em:skin>
+				<em:locale>locale/en-US/</em:locale>
+				<em:locale>locale/fr-FR/</em:locale>
+				<em:locale>locale/it-IT/</em:locale>
+				<em:locale>locale/de-DE/</em:locale>
+			</Description>
+		</em:file>
+
+		<em:targetApplication>
+			<Description>
+				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+				<em:minVersion>1.0</em:minVersion>
+				<em:maxVersion>4.0.*</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+
+		<em:targetApplication>
+		  <Description>
+			<em:id>{a463f10c-3994-11da-9945-000d60ca027b}</em:id>
+			<em:minVersion>0.5</em:minVersion>
+			<em:maxVersion>1.0.*</em:maxVersion>
+		  </Description>
+		</em:targetApplication>
+
+		<em:targetApplication>
+		  <Description>
+			<em:id>webrunner@developer.mozilla.org</em:id>
+			<em:minVersion>0.1</em:minVersion>
+			<em:maxVersion>1.0.*</em:maxVersion>
+		  </Description>
+		</em:targetApplication>
+		
+		<em:targetApplication>
+		  <Description>
+			<em:id>prism@developer.mozilla.org</em:id>
+			<em:minVersion>0.1</em:minVersion>
+			<em:maxVersion>1.0.*</em:maxVersion>
+		  </Description>
+		</em:targetApplication>
+        <em:targetApplication>
+            <Description>
+                <em:id>songbird@songbirdnest.com</em:id>
+                <em:minVersion>1.1</em:minVersion>
+                <em:maxVersion>1.4.0a</em:maxVersion>
+            </Description>
+        </em:targetApplication>
+        <songbird:displayPane>
+              <Description>
+                <songbird:contentTitle>DragDropUpload</songbird:contentTitle>
+                <songbird:contentUrl>chrome://dragdropupload/content/sidebar.xul</songbird:contentUrl>
+                <songbird:contentIcon>chrome://dragdropupload/skin/dragdrop-icon.png</songbird:contentIcon>
+                <songbird:defaultWidth>330</songbird:defaultWidth>
+                <songbird:defaultHeight>100</songbird:defaultHeight>
+                <songbird:suggestedContentGroups>sidebar</songbird:suggestedContentGroups>
+                <songbird:showOnInstall>true</songbird:showOnInstall>
+              </Description>
+        </songbird:displayPane>
+	</Description>
+
+</RDF>

@@ -1,0 +1,56 @@
+
+overlay	chrome://browser/content/browser.xul	chrome://dragdropupload/content/dragdropuploadOverlay.xul
+overlay	chrome://navigator/content/navigator.xul	chrome://dragdropupload/content/dragdropuploadOverlay.xul
+overlay	chrome://webrunner/content/webrunner.xul	chrome://dragdropupload/content/dragdropuploadOverlay.xul
+content	dragdropupload	jar:chrome/dragdropupload.jar!/content/
+
+skin	dragdropupload	classic/1.0	jar:chrome/dragdropupload.jar!/skin/
+style	chrome://global/content/customizeToolbar.xul	chrome://dragdropupload/skin/dragdropupload.css
+
+locale	dragdropupload	en-US	jar:chrome/dragdropupload.jar!/locale/en-US/
+
+locale	dragdropupload	fr-FR	jar:chrome/dragdropupload.jar!/locale/fr-FR/
+
+locale	dragdropupload	it-IT	jar:chrome/dragdropupload.jar!/locale/it-IT/
+
+locale	dragdropupload	de-DE	jar:chrome/dragdropupload.jar!/locale/de-DE/
+
+locale	dragdropupload	cs-CZ	jar:chrome/dragdropupload.jar!/locale/cs-CZ/
+
+locale	dragdropupload	es-AR	jar:chrome/dragdropupload.jar!/locale/es-AR/
+
+locale	dragdropupload	es-ES	jar:chrome/dragdropupload.jar!/locale/es-ES/
+
+locale	dragdropupload	fa-IR	jar:chrome/dragdropupload.jar!/locale/fa-IR/
+
+locale	dragdropupload	he-IL	jar:chrome/dragdropupload.jar!/locale/he-IL/
+
+locale	dragdropupload	hu-HU	jar:chrome/dragdropupload.jar!/locale/hu-HU/
+
+locale	dragdropupload	is-IS	jar:chrome/dragdropupload.jar!/locale/is-IS/
+
+locale	dragdropupload	ja-JP	jar:chrome/dragdropupload.jar!/locale/ja-JP/
+
+locale	dragdropupload	ko-KR	jar:chrome/dragdropupload.jar!/locale/ko-KR/
+
+locale	dragdropupload	nl-NL	jar:chrome/dragdropupload.jar!/locale/nl-NL/
+
+locale	dragdropupload	pl-PL	jar:chrome/dragdropupload.jar!/locale/pl-PL/
+
+locale	dragdropupload	pt-BR	jar:chrome/dragdropupload.jar!/locale/pt-BR/
+
+locale	dragdropupload	ru-RU	jar:chrome/dragdropupload.jar!/locale/ru-RU/
+
+locale	dragdropupload	sk-SK	jar:chrome/dragdropupload.jar!/locale/sk-SK/
+
+locale	dragdropupload	sr-RS	jar:chrome/dragdropupload.jar!/locale/sr-RS/
+
+locale	dragdropupload	sv-SE	jar:chrome/dragdropupload.jar!/locale/sv-SE/
+
+locale	dragdropupload	tr-TR	jar:chrome/dragdropupload.jar!/locale/tr-TR/
+
+locale	dragdropupload	uk-UA	jar:chrome/dragdropupload.jar!/locale/uk-UA/
+
+locale	dragdropupload	zh-CN	jar:chrome/dragdropupload.jar!/locale/zh-CN/
+
+locale	dragdropupload	zh-TW	jar:chrome/dragdropupload.jar!/locale/zh-TW/
